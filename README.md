@@ -12,6 +12,11 @@
         - 요청에 대한 응답 일관성을 위한 ip routing policy 반영
 
 
+#### 테스트 적용 방법
+
+    1. EC2를 생성하면서 Secondary ENI Attach 부분은 주석 처리 후 시작
+    2. EC2가 생성되고 난 후 Secondary ENI 연결
+    
 
 #### Multi EIP 연결에 따른 PING Drop 
 

@@ -68,7 +68,7 @@ resource "aws_network_interface" "vpc1_eni" {
 }
 
 # 추가 인터페이스 
-# 추가 EIP - 보조 인터페이스에 연결
+# 추가 EIP - 보조 인터페이스에 연결 
 resource "aws_eip" "vpc1_2_eip_secondary" {
   network_interface = aws_network_interface.vpc1_2_eni_secondary.id
   depends_on        = [aws_internet_gateway.vpc1_igw]
